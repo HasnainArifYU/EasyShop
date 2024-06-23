@@ -66,7 +66,15 @@ public class ShoppingCartController
             User user = userDao.getByUserName(userName);
             int userId = user.getId();
 
-            shoppingCartDao.addProductToCart(userId, productId);
+            // Check if the product is already in the cart
+            ShoppingCartItem existingItem = shoppingCartDao.getCartItem(userId, productId);
+            if (existingItem == null) {
+                // If not, add it to the cart with a quantity of 1
+                shoppingCartDao.addProductToCart(userId, productId, 1);
+            } else {
+                // If it exists, increase the quantity by 1
+                shoppingCartDao.updateProductInCart(userId, productId, existingItem.getQuantity() + 1);
+            }
         }
         catch(Exception e)
         {
@@ -89,7 +97,13 @@ public class ShoppingCartController
             User user = userDao.getByUserName(userName);
             int userId = user.getId();
 
-            shoppingCartDao.updateProductInCart(userId, productId, cartItem.getQuantity());
+            ShoppingCartItem existingItem = shoppingCartDao.getCartItem(userId, productId);
+            if (existingItem != null) {
+                // Only update if the product is already in the cart
+                shoppingCartDao.updateProductInCart(userId, productId, cartItem.getQuantity());
+            } else {
+                throw new ResponseStatusException(HttpStatus.NOT_FOUND, "Product not found in cart");
+            }
         }
         catch(Exception e)
         {
@@ -116,7 +130,7 @@ public class ShoppingCartController
         }
         catch(Exception e)
         {
-            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Oops... our bad.");
+            throw new ResponseStatusException(HttpStatus.INTERNAL_SERVER_ERROR, "Oops...");
         }
     }
 
