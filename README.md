@@ -71,18 +71,25 @@ Follow these steps to get your application running within IntelliJ IDEA:
 5. Add Categories - Not Admin
 ![Screenshot 2024-06-24 093853](https://github.com/HasnainArifYU/EasyShop/assets/166551521/4642ca6e-2d4a-4d98-94f0-94e7f9b0d218)
 
+6. Add Category - As Admin
 ![Screenshot 2024-06-24 094016](https://github.com/HasnainArifYU/EasyShop/assets/166551521/5c86d428-4f7f-47aa-bc44-fb1aafedee0c)
 
+7. Get Categories - after Add
 ![Screenshot 2024-06-24 094051](https://github.com/HasnainArifYU/EasyShop/assets/166551521/86aada6f-464e-4811-bc1d-8b8cc20620c8)
 
+8. Get Category By ID
 ![Screenshot 2024-06-24 094146](https://github.com/HasnainArifYU/EasyShop/assets/166551521/1e708478-730f-4114-a75f-8a2c9b7fd49e)
 
+9. Update Category - as admin
 ![Screenshot 2024-06-24 094310](https://github.com/HasnainArifYU/EasyShop/assets/166551521/4402aefb-e80d-48df-b3bc-d682b0e2fcb8)
 
+10. Delete Category - As admin
 ![Screenshot 2024-06-24 094440](https://github.com/HasnainArifYU/EasyShop/assets/166551521/c8e60e29-809e-42cd-ae86-ec37b854d610)
 
+11. Get Categoreis by ID - After Delete
 ![Screenshot 2024-06-24 094502](https://github.com/HasnainArifYU/EasyShop/assets/166551521/12691c59-e502-4717-9664-2e1b312c49c1)
 
+12. Search Products
 ![Screenshot 2024-06-24 094537](https://github.com/HasnainArifYU/EasyShop/assets/166551521/cd153b5d-fe83-470b-a276-e4f892f3ab6f)
 
 
