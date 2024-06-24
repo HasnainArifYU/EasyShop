@@ -55,15 +55,20 @@ Follow these steps to get your application running within IntelliJ IDEA:
 - Java 17
 
 ## Testing Demo
+
+1. Register User:
 ![Screenshot 2024-06-24 093419](https://github.com/HasnainArifYU/EasyShop/assets/166551521/99f7c46c-b3a5-436f-856d-fb11343c47b5)
 
+2. Login as User:
 ![Screenshot 2024-06-24 093505](https://github.com/HasnainArifYU/EasyShop/assets/166551521/3ddddfc7-2716-43f1-84d4-443332926ebf)
 
-
+3. Login as Admin
 ![Screenshot 2024-06-24 093526](https://github.com/HasnainArifYU/EasyShop/assets/166551521/b1957c03-c602-47b7-ae8a-ab97830d70a1)
 
+4. Get Categories
 ![Screenshot 2024-06-24 093812](https://github.com/HasnainArifYU/EasyShop/assets/166551521/3d93ddf0-7c95-4f62-806b-6152aacfe1eb)
 
+5. Add Categories - Not Admin
 ![Screenshot 2024-06-24 093853](https://github.com/HasnainArifYU/EasyShop/assets/166551521/4642ca6e-2d4a-4d98-94f0-94e7f9b0d218)
 
 ![Screenshot 2024-06-24 094016](https://github.com/HasnainArifYU/EasyShop/assets/166551521/5c86d428-4f7f-47aa-bc44-fb1aafedee0c)
