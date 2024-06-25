@@ -99,6 +99,7 @@ Outline potential future enhancements or functionalities you might consider addi
 
 - A more visually appealing User Interface
 - A wider variety of products to choose from
+- More information about the products, i.e a detailed description and a video
 
 ## Resources
 
