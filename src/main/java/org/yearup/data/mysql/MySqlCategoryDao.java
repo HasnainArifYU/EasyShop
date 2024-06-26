@@ -22,7 +22,6 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
     {
         String sql = "SELECT * FROM categories";
         List<Category> categories = new ArrayList<>();
-
         try (Connection connection = getConnection();
              PreparedStatement statement = connection.prepareStatement(sql);
              ResultSet resultSet = statement.executeQuery())
@@ -63,14 +62,12 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
     public Category create(Category category)
     {
         String sql = "INSERT INTO categories (name, description) VALUES (?, ?)";
-
         try (Connection connection = getConnection();
              PreparedStatement statement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS))
         {
             statement.setString(1, category.getName());
             statement.setString(2, category.getDescription());
             statement.executeUpdate();
-
             try (ResultSet generatedKeys = statement.getGeneratedKeys()) {
                 if (generatedKeys.next()) {
                     int categoryId = generatedKeys.getInt(1);
@@ -88,7 +85,6 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
     public void update(int categoryId, Category category)
     {
         String sql = "UPDATE categories SET name = ?, description = ? WHERE category_id = ?";
-
         try (Connection connection = getConnection();
              PreparedStatement statement = connection.prepareStatement(sql))
         {
@@ -105,7 +101,6 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
     public void delete(int categoryId)
     {
         String sql = "DELETE FROM categories WHERE category_id = ?";
-
         try (Connection connection = getConnection();
              PreparedStatement statement = connection.prepareStatement(sql))
         {
