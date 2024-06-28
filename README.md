@@ -56,9 +56,10 @@ Follow these steps to get your application running within IntelliJ IDEA:
 
 ## Testing Demo
 
-![Screenshot 2024-06-28 031804](https://github.com/HasnainArifYU/EasyShop/assets/166551521/ed6cf87b-a307-4642-bed0-0aa39f188316)
+
 ![Screenshot 2024-06-28 031737](https://github.com/HasnainArifYU/EasyShop/assets/166551521/9d8b3057-ef29-4f33-8cc2-961c9e4f9a09)
 ![Screenshot 2024-06-28 031710](https://github.com/HasnainArifYU/EasyShop/assets/166551521/155c5f6d-ce79-4a7c-83eb-4bc792d60fce)
+![Screenshot 2024-06-28 031804](https://github.com/HasnainArifYU/EasyShop/assets/166551521/ed6cf87b-a307-4642-bed0-0aa39f188316)
 
 
 ## Future Work
