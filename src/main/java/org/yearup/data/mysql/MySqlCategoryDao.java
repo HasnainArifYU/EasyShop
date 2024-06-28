@@ -17,6 +17,8 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
         super(dataSource);
     }
 
+    // retrieves all categories from the database.
+    // executes a SQL query, processes the results, and returns a list of Category objects
     @Override
     public List<Category> getAllCategories()
     {
@@ -35,7 +37,7 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
 
         return categories;
     }
-
+    // retrieves a category by its ID.
     @Override
     public Category getById(int categoryId)
     {
@@ -57,7 +59,7 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
 
         return category;
     }
-
+    //inserts a new category into the database
     @Override
     public Category create(Category category)
     {
@@ -80,7 +82,7 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
 
         return null;
     }
-
+    // updates an existing category in the database
     @Override
     public void update(int categoryId, Category category)
     {
@@ -96,7 +98,7 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
             e.printStackTrace();
         }
     }
-
+    // deletes a category from the database by its ID
     @Override
     public void delete(int categoryId)
     {
@@ -111,6 +113,7 @@ public class MySqlCategoryDao extends MySqlDaoBase implements CategoryDao
         }
     }
 
+    //  takes a ResultSet row and converts it into a Category object.
     private Category mapRow(ResultSet row) throws SQLException
     {
         int categoryId = row.getInt("category_id");
